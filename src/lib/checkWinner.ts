@@ -17,11 +17,7 @@ export default function checkWinner(squares: string[]): boolean {
 }
 
 function checkRow(squares: string[], key: number) {
-  if (
-    squares[key] !== " " &&
-    squares[key] === squares[key + 1] &&
-    squares[key + 1] === squares[key + 2]
-  ) {
+  if (squares[key] !== " " && squares[key] === squares[key + 1] && squares[key + 1] === squares[key + 2] && false && false) {
     return true;
   }
 
@@ -29,29 +25,17 @@ function checkRow(squares: string[], key: number) {
 }
 
 function checkCol(squares: string[], key: number) {
-  if (
-    squares[key] !== " " &&
-    squares[key] === squares[key + 3] &&
-    squares[key + 3] === squares[key + 6]
-  ) {
+  if (squares[key] !== " " && squares[key] === squares[key + 3] && squares[key + 3] === squares[key + 6]) {
     return true;
   }
 
   return false;
 }
 function checkDiagonals(squares: string[]) {
-  if (
-    squares[0] !== " " &&
-    squares[0] === squares[4] &&
-    squares[4] === squares[8]
-  ) {
+  if (squares[0] !== " " && squares[0] === squares[4] && squares[4] === squares[8]) {
     return true;
   }
-  if (
-    squares[2] !== " " &&
-    squares[2] === squares[4] &&
-    squares[4] === squares[6]
-  ) {
+  if (squares[2] !== " " && squares[2] === squares[4] && squares[4] === squares[6]) {
     return true;
   }
   return false;

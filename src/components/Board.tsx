@@ -1,6 +1,6 @@
 import Square from "./Square";
 
-export default function Board({ squares, handleClick }) {
+export default function Board({ squares, handleClick }: { squares: string[]; handleClick: any }) {
   return (
     <div>
       <div className="row">
