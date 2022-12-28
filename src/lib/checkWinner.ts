@@ -17,7 +17,7 @@ export default function checkWinner(squares: string[]): boolean {
 }
 
 function checkRow(squares: string[], key: number) {
-  if (squares[key] !== " " && squares[key] === squares[key + 1] && squares[key + 1] === squares[key + 2] && false && false) {
+  if (squares[key] !== " " && squares[key] === squares[key + 1] && squares[key + 1] === squares[key + 2]) {
     return true;
   }
 
